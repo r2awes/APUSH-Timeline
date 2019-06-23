@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import {Label} from 'semantic-ui-react';
-import timeline from '../comps/timeline';
 
-const Timeline = timeline;
-export default class Person extends Component {
+export default class Era extends Component {
 
 	constructor(props) {
 		super(props)
@@ -58,14 +56,13 @@ export default class Person extends Component {
 		return (
 			<div>
 				<div className="card">
-					<h4>Person: {title}</h4>
+					<h4>Era: {title}</h4>
 					<p className="article">{text}</p>
 				</div>
 				{/* <div className="card">
 					<h4>Useful Links</h4>
 					<div className="hor">{links}</div>
 				</div> */}
-				<Timeline/>
 			</div>
 		)
 	}

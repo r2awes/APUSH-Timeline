@@ -1,15 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-const click = (l) => {
-	console.log(l);	
-}
+
+const click = l => console.log(l);
 
 export default props => {
 	let {title, desc, link, real, type} = props;
 
 	real = real == null ? true : false
 	return (
-		<Link to={"/" + type + "/"}>
+		<Link to={`/${type}/${title}`}>
 			<div className="listitem" onClick={() => click(props)}>
 				{ real ? (
 					<a href={link}>

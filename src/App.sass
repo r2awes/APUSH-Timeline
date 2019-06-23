@@ -20,15 +20,26 @@
 
 .card
 	padding: 10px
-	flex: 1
 	display: flex
 	flex-direction: column
-	margin: 10px
-	width: 100%
-	max-height: 500px 
+	margin-top: 10px
+	align-items: center
+	width: 55vw
 	border-radius: 5px
 	background-color: $bkgTwo
 	box-sizing: border-box
+	h4
+		color: $hOne
+		margin: 10px 0
+	a
+		text-align: center
+	p
+		text-align: center
+		margin: 0
+	.hor
+		display: flex
+		overflow-x: scroll
+		width: 50vw
 
 .tagline
 	display: flex
@@ -52,8 +63,23 @@
 .result
 	margin-left: 40px
 
+.label
+	font-size: .85714286rem
+	line-height: 1
+	margin: 0 .14285714em
+	background-color: $bkgThree
+	padding: .5833em .833em
+	color: rgba(0,0,0,.6)
+	text-transform: none
+	font-weight: 700
+	width: max-content
+	border-radius: 5px
+	&:hover
+		background: $hoverThree
+		transition: background .1s ease
+
 div.search 
-	width: 55%
+	width: 55vw
 	.input
 		input
 			background: $bkg

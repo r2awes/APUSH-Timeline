@@ -6,13 +6,14 @@ Title: APUSH Timeline
 
 import React from 'react';
 import './App.sass';
+//import 'semantic-ui-css/semantic.min.css'
 import SearchComp from './comps/search';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import people from './pages/people';
+import People from './pages/people';
+import Era from './pages/era';
 import helpout from './pages/help-out';
 import event from './pages/event';
 
-const People = people;
 const HelpOut = helpout;
 const Event = event;
 
@@ -28,8 +29,9 @@ function App() {
 				<SearchComp />
 
 				<div className="view">
-					<Route path="/person" exact component={People}/>
-					<Route path="/event" exact component={Event}/>
+					<Route path="/person/:title" exact component={People}/>
+					<Route path="/era/:title" exact component={Era}/>
+					<Route path="/event/:title" exact component={Event}/>
 					<Route path="/help-out" exact component={HelpOut}/>
 					<div className="spacer"/>
 					<div className="tagline">

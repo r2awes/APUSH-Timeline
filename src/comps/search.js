@@ -89,6 +89,14 @@ let data = {
 			}
 		]
 	},
+	event: {
+		results: [
+			{
+				title: "Sinking of The USS Maine",
+				type: "event"
+			}
+		]
+	},
 	people: {
 		results: [
 			{
